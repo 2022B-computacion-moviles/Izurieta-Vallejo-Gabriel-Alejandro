@@ -2,7 +2,6 @@ import java.awt.PageAttributes.PrintQualityType
 import java.util.*
 
 fun main(args: Array<String>) {
-    println("Hola mundo")
     //Tipos de variables
     //Inmutables (no re asignar) =
     val inmutable: String = "Vicente";
