@@ -52,3 +52,47 @@ fun main(args: Array<String>) {
 
 
 }
+//No existe el void en kotlin pero si el Unit
+fun imprimirNombre(nombre: String): Unit{
+    println("Nombre : ${nombre}");
+}
+fun calcularSueldo(
+    sueldo:Double, //requerido
+    tasa: Double=12.00,//opcional por defecto
+    //Evita los null pointerExceptions
+    bonoEspecial: Double?=null // opcional nulo , verificamos que puede ser o no nulo
+): Double{
+    if(bonoEspecial!=null){
+        return sueldo * tasa * bonoEspecial
+    }
+    return sueldo * tasa
+}
+
+//CLASES
+abstract class NumerosJava{
+    protected val numeroUno:Int
+    private val numeroDos: Int
+    constructor(
+        uno:Int,//Parametro
+        dos:Int //Parametro
+    ){
+        this.numeroUno = uno;
+        this.numeroDos = dos;
+        println("Iniciando")
+    }
+}
+//CLASES EN KOTLIN
+abstract class Numeros(//Constructor Primario
+    //uno : Int, //Parametro
+    //public var uno : Int, //Propiedad de la clase publica
+    protected val numeroUno: Int, //Propiedad
+    protected val numeroDos: Int
+){
+    init{//Bloque de codigo del constructor primario
+        //this.numeroUno    //"this" opcional
+        //this.numeroDos
+        numeroUno
+        numeroDos
+        println("Iniciando")
+    }
+}
