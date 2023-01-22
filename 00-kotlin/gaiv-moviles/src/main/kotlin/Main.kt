@@ -48,9 +48,21 @@ fun main(args: Array<String>) {
     //If PEQUEÑO --- Característica de Kotlin
     //Si el estadoCivilWhen es si entonces coquetea
     val coqueto= if(estadoCivilWhen=='S') "Si" else "No"
+    val sumaUno = Suma(1,2);
+    val sumaDos = Suma(1,null);
+    val sumaTres = Suma(null,1)
+    val sumaCuatro = Suma(null,null)
 
+    sumaUno.sumar()
+    sumaDos.sumar()
+    sumaTres.sumar()
+    sumaCuatro.sumar()
 
+    print(Suma.historialSumas)
 }
+
+
+//                  FUNCIONES
 //No existe el void en kotlin pero si el Unit
 fun imprimirNombre(nombre: String): Unit{
     println("Nombre : ${nombre}");
@@ -85,7 +97,7 @@ abstract class Numeros(//Constructor Primario
     //uno : Int, //Parametro
     //public var uno : Int, //Propiedad de la clase publica
     protected val numeroUno: Int, //Propiedad
-    protected val numeroDos: Int
+    protected val numeroDos: Int  //Propiedad
 ){
     init{//Bloque de codigo del constructor primario
         //this.numeroUno    //"this" opcional
@@ -94,4 +106,55 @@ abstract class Numeros(//Constructor Primario
         numeroDos
         println("Iniciando")
     }
+}
+
+
+class Suma( //Constructor Primario Suma
+    uno: Int, //Parametro
+    dos: Int, //Parametro
+): Numeros(//Heredamos de la clase Numeros
+    //Super constructor numeros
+    uno,
+    dos
+){
+    init{//Bloque constructor primario
+        this.numeroUno
+        this.numeroDos
+    }
+    constructor(//Segundo Constructor
+    uno: Int?,
+    dos: Int
+    ):this(
+        if (uno == null ) 0 else uno,
+        dos
+    ){}
+    constructor(//Tercer Constructor
+        uno: Int,
+        dos: Int?
+    ):this(
+        uno,
+        if (dos == null ) 0 else dos
+    ){}
+    constructor(//Cuarto Constructor
+        uno: Int?,
+        dos: Int?
+    ):this(
+        if (uno == null ) 0 else uno,
+        if (dos == null ) 0 else dos
+    ){}
+    fun sumar():Int{
+        var total = numeroUno + numeroDos;
+        agregarHistorial(total);
+        return total;
+    }
+
+    //El companion object se puede compartir entre todas las instancias de la clase
+    companion object {
+        val pi = 3.14; //Suma.pi ->3.14
+        val historialSumas = arrayListOf<Int>()
+        fun agregarHistorial(valorNuevaSuma: Int){
+            historialSumas.add(valorNuevaSuma)
+        }
+    }
+
 }
