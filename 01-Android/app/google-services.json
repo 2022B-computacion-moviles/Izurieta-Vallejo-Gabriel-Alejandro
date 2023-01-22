@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "985890396578",
+    "project_id": "movcomp-gaiv",
+    "storage_bucket": "movcomp-gaiv.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985890396578:android:a0e6acca3a215cc00b3afb",
+        "android_client_info": {
+          "package_name": "com.example.movcompgaiv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "985890396578-003ia99bfdb5o3nt3macocep54hh1k42.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChR99Hy1NSRHZuqfMU-45dIp3fHV1yTSE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "985890396578-003ia99bfdb5o3nt3macocep54hh1k42.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
