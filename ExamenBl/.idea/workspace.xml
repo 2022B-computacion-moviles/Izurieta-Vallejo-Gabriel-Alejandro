@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4315c52d-38a5-4fef-9112-c5c74572e493" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../01-Android/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-Android/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-Android/app/src/main/java/com/example/movcompgaiv/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../01-Android/app/src/main/java/com/example/movcompgaiv/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +65,7 @@
       <workItem from="1674576293671" duration="2013000" />
       <workItem from="1674578864954" duration="681000" />
       <workItem from="1674579566483" duration="2792000" />
-      <workItem from="1674591430942" duration="1411000" />
+      <workItem from="1674591430942" duration="2548000" />
     </task>
     <servers />
   </component>
