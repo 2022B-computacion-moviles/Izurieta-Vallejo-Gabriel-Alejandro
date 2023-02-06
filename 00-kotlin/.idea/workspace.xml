@@ -4,36 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4315c52d-38a5-4fef-9112-c5c74572e493" name="Changes" comment="" />
+    <list default="true" id="572f92e9-2616-4dee-a0f8-d56520facb90" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExternalProjectsData">
-    <projectState path="$PROJECT_DIR$/EscuelaExamenBl">
-      <ProjectState />
-    </projectState>
-  </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <projects_view>
-          <tree_state>
-            <expand />
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2KmF2dFxHNkNCsfZfgE93UKS856" />
+  <component name="ProjectId" id="2L93akIlkFfWMXJMDp8oXXEfqjY" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -54,17 +34,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4315c52d-38a5-4fef-9112-c5c74572e493" name="Changes" comment="" />
-      <created>1674571645686</created>
+      <changelist id="572f92e9-2616-4dee-a0f8-d56520facb90" name="Changes" comment="" />
+      <created>1675269537005</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1674571645686</updated>
-      <workItem from="1674571646916" duration="82000" />
-      <workItem from="1674576293671" duration="2013000" />
-      <workItem from="1674578864954" duration="681000" />
-      <workItem from="1674579566483" duration="2792000" />
-      <workItem from="1674591430942" duration="2548000" />
-      <workItem from="1675269408132" duration="708000" />
+      <updated>1675269537005</updated>
+      <workItem from="1675269538504" duration="378000" />
     </task>
     <servers />
   </component>
