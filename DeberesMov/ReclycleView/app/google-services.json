@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "652777736992",
+    "project_id": "movcomp-gaiv-68230",
+    "storage_bucket": "movcomp-gaiv-68230.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:652777736992:android:ca005b535bb452b3f1a545",
+        "android_client_info": {
+          "package_name": "com.example.movcompgaiv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "652777736992-div689qctkluonsk1f21rrsqi0fig4kn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnnAh1TmTcf4EHp1CRzGFTqsEE6XdRPX8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "652777736992-div689qctkluonsk1f21rrsqi0fig4kn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:652777736992:android:724329da412f2f80f1a545",
+        "android_client_info": {
+          "package_name": "com.example.supermaxi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "652777736992-div689qctkluonsk1f21rrsqi0fig4kn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnnAh1TmTcf4EHp1CRzGFTqsEE6XdRPX8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "652777736992-div689qctkluonsk1f21rrsqi0fig4kn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
