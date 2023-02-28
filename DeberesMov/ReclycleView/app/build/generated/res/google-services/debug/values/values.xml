@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">652777736992-div689qctkluonsk1f21rrsqi0fig4kn.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">652777736992</string>
+    <string name="google_api_key" translatable="false">AIzaSyDnnAh1TmTcf4EHp1CRzGFTqsEE6XdRPX8</string>
+    <string name="google_app_id" translatable="false">1:652777736992:android:724329da412f2f80f1a545</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDnnAh1TmTcf4EHp1CRzGFTqsEE6XdRPX8</string>
+    <string name="google_storage_bucket" translatable="false">movcomp-gaiv-68230.appspot.com</string>
+    <string name="project_id" translatable="false">movcomp-gaiv-68230</string>
+</resources>
