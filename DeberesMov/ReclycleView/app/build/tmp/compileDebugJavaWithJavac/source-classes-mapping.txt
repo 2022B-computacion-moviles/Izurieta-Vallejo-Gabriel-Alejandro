@@ -1,2 +1,0 @@
-com/example/supermaxi/BuildConfig.java
- com.example.supermaxi.BuildConfig
