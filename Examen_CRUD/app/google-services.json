@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "313274518075",
+    "project_id": "examen-crud-gaiv",
+    "storage_bucket": "examen-crud-gaiv.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:313274518075:android:bc043d4618967e53e82a1e",
+        "android_client_info": {
+          "package_name": "com.example.examen_crud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "313274518075-s5llkioqoqu13ajm8m39e9m1usif2178.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgESFqM0RpTPv54RkZNfMZmSedhyM0ldE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "313274518075-s5llkioqoqu13ajm8m39e9m1usif2178.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
