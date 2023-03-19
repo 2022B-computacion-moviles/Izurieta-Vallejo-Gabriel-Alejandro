@@ -36,15 +36,24 @@ class FB_Profesor {
             }
     }
 
-    fun create_Update(entity: Profesor) {
+    fun create(entity: Profesor) {
         val profesor = hashMapOf(
             "nombre-profesor" to entity.nombreProfesor,
             "fecha_inicio" to entity.fecha_Inicio.toString(),
             "salario-profesor" to entity.salarioProfesor,
             "cantidad_asignaturas" to entity.cantidad_asignaturas
         )
-
         profesorCollectionReference.document(randomID().toString()).set(profesor)
+    }
+
+    fun update(entity: Profesor) {
+        val profesor = hashMapOf(
+            "nombre-profesor" to entity.nombreProfesor,
+            "fecha_inicio" to entity.fecha_Inicio.toString(),
+            "salario-profesor" to entity.salarioProfesor,
+            "cantidad_asignaturas" to entity.cantidad_asignaturas
+        )
+        profesorCollectionReference.document(entity.codeProfesor.toString()).set(profesor)
     }
 
     fun read(code: Int, onSuccess: (Profesor) -> Unit) {
@@ -66,13 +75,9 @@ class FB_Profesor {
                 }
             }
     }
-
-    fun delete(code: Int, onSuccess: (Unit) -> Unit) {
+    fun delete(code: Int) {
         val profesorReference = profesorCollectionReference.document(code.toString())
-
-        profesorReference.delete().addOnSuccessListener {
-            onSuccess(Unit)
-        }
+        profesorReference.delete()
     }
 
     fun randomID() :Int {

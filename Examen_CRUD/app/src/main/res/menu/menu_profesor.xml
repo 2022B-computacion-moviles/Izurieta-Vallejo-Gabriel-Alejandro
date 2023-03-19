@@ -3,9 +3,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/menuProfesor_Ver"
+        android:title="Ver Asignaturas" />
+    <item
         android:id="@+id/menuProfesor_editar"
         android:title="Editar" />
     <item
-        android:id="@+id/menuProfesor_Ver"
-        android:title="Ver Asignaturas" />
+        android:id="@+id/menuProfesor_Eliminar"
+        android:title="Eliminar" />
 </menu>

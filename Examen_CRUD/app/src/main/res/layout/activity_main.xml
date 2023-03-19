@@ -9,20 +9,22 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvw_verProfesores"
-        android:layout_width="316dp"
-        android:layout_height="544dp"
+        android:layout_width="401dp"
+        android:layout_height="532dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
 
     <Button
         android:id="@+id/btn_crearProfesor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Crear Profesor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rvw_verProfesores" />
+        app:layout_constraintTop_toBottomOf="@+id/rvw_verProfesores"
+        app:layout_constraintVertical_bias="0.318" />
 </androidx.constraintlayout.widget.ConstraintLayout>

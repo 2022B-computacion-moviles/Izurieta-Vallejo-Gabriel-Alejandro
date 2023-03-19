@@ -26,10 +26,10 @@ class FB_Asignatura {
                         Asignatura(
                             codeAsignatura = document.id.split("/").last().toInt(),
                             codeProfesor = profesorCode,
-                            nombreAsignatura = document.getString("marca")!!,
-                            costoMateriales = document.getDouble("precio")!!,
-                            esVespertina = document.getBoolean("color_subjetivo")!!,
-                            numeroAlumnos = document.getDouble("meses_plazo_pagar")!!.toInt()
+                            nombreAsignatura = document.getString("nombreAsignatura")!!,
+                            costoMateriales = document.getDouble("costoMateriales")!!,
+                            esVespertina = document.getBoolean("esVespertina")!!,
+                            numeroAlumnos = document.getDouble("numeroAlumnos")!!.toInt()
                         )
                     )
                 }
@@ -38,7 +38,7 @@ class FB_Asignatura {
             }
     }
 
-    fun create_Update(entity: Asignatura) {
+    fun create(entity: Asignatura) {
         val asignatura = hashMapOf(
             "nombreAsignatura" to entity.nombreAsignatura,
             "costoMateriales" to entity.costoMateriales,
@@ -82,29 +82,23 @@ class FB_Asignatura {
         }
     }
 
-    fun delete(code: Int, onSuccess: (Unit) -> Unit) {
-        FB_Global.firebaseProfesor.getAllProfesores{ documents ->
-            for (document in documents) {
+    fun delete(asignatura: Asignatura) {
+
                 val db = Firebase.firestore
                 val asignaturaCollectionReference = db.collection(
-                    "profesores/${document.codeProfesor}/asignaturas"
+                    "profesores/${asignatura.codeProfesor}/asignaturas"
                 )
 
                 asignaturaCollectionReference
                     .get()
                     .addOnSuccessListener { documentsAsinaturas ->
                         for (documentAsignatura in documentsAsinaturas) {
-                            if (documentAsignatura.id.toInt() == code) {
+                            if (documentAsignatura.id.toInt() == asignatura.codeAsignatura) {
                                 val asignaturaReference = asignaturaCollectionReference
-                                    .document(code.toString())
-
-                                asignaturaReference.delete().addOnSuccessListener {
-                                    onSuccess(Unit)
-                                }
+                                    .document(asignatura.codeAsignatura.toString())
+                                asignaturaReference.delete()
                             }
-                        }
                     }
-            }
         }
     }
 

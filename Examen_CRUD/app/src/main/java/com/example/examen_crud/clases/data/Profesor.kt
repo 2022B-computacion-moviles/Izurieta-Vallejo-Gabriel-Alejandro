@@ -1,5 +1,6 @@
 package com.example.examen_crud.clases.data
 
+import java.io.Serializable
 import java.time.LocalDate
 
 class Profesor (
@@ -8,4 +9,4 @@ class Profesor (
     var fecha_Inicio: LocalDate,
     var salarioProfesor: Double,
     var cantidad_asignaturas: Int
-)
+) : Serializable
