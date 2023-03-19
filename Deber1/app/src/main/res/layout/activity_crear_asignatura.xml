@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrearAsignatura">
+
+    <EditText
+        android:id="@+id/crearAsignatura_Nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.398"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/crearAsignatura_Costo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Costo"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/crearAsignatura_Nombre"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/crearAsignatura_Nombre"
+        app:layout_constraintTop_toBottomOf="@+id/crearAsignatura_Nombre" />
+
+    <EditText
+        android:id="@+id/crearAsignatura_EsVespertina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="¿Es vespertina?"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/crearAsignatura_Costo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/crearAsignatura_Costo"
+        app:layout_constraintTop_toBottomOf="@+id/crearAsignatura_Costo" />
+
+    <EditText
+        android:id="@+id/crearAsignatura_NumAlumnos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="Num-Alumnos"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/crearAsignatura_EsVespertina"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/crearAsignatura_EsVespertina"
+        app:layout_constraintTop_toBottomOf="@+id/crearAsignatura_EsVespertina" />
+
+    <Button
+        android:id="@+id/btn_crear_asignatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CREAR ASIGNATURA"
+        app:layout_constraintEnd_toEndOf="@+id/crearAsignatura_NumAlumnos"
+        app:layout_constraintStart_toStartOf="@+id/crearAsignatura_NumAlumnos"
+        app:layout_constraintTop_toBottomOf="@+id/crearAsignatura_NumAlumnos" />
+</androidx.constraintlayout.widget.ConstraintLayout>
